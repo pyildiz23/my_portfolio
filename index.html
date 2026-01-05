@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pinar Demiray | Front-End Developer creating modern, responsive web experiences with React and JavaScript.">
+
     <title>PINAR DEMİRAY - Front-End Developer</title>
+
+    <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">PINAR DEMİRAY</div>
+
+    <!-- HEADER -->
+<header>
+    <div class="logo">PINAR DEMİRAY</div>
+
+    <div class="nav-container">
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -18,112 +28,188 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
 
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+</header>
+
+
+    <!-- HERO -->
     <section class="hero">
         <div class="hero-content">
             <h1>Hello, I'm Pinar</h1>
             <h2>Front-End Developer</h2>
-            <p>I build clean, responsive, and user-friendly web applications. Passionate about turning ideas into interactive experiences that people enjoy.</p>
+            <p>
+                I build clean, responsive, and user-friendly web applications.
+                Passionate about turning ideas into interactive experiences.
+            </p>
+
             <div class="social-links">
-                <a href="#" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
-                <a href="#" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/pyildiz23" class="social-btn" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/pinar-demiray/" class="social-btn" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+
+            <!-- CTA BUTTONS -->
+            <div class="hero-buttons">
+                <a href="#projects" class="primary-btn">View My Projects</a>
+                <a href="assets/Pinar-Demiray-CV.pdf" target="_blank" class="secondary-btn" download>
+                    Download CV
+                </a>
             </div>
         </div>
     </section>
 
+    <!-- ABOUT -->
+    <section id="about" class="reveal">
+        <h2 class="section-title">About Me</h2>
 
-    <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-content">
-        <div class="about-text">
-            <p>Hi! I'm Pinar, a Front-End Developer focused on creating elegant and intuitive web experiences. I specialize in translating designs into pixel-perfect, responsive interfaces.</p>
-            <p style="margin-top: 1rem;">I enjoy learning new technologies, tackling challenging projects, and building websites that users actually love. When I'm not coding, I like exploring UI trends and improving my design skills.</p>
-        </div>
-        <div class="skills">
-            <div class="skill-item">
-                <i class="fab fa-html5"></i>
-                <p>HTML5</p>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Hi! I'm Pinar, a Front-End Developer focused on creating elegant
+                    and intuitive web experiences. I specialize in translating designs
+                    into pixel-perfect, responsive interfaces.
+                </p>
+                <p style="margin-top:1rem;">
+                    I enjoy learning new technologies, tackling challenging projects,
+                    and building websites that users actually love.
+                </p>
             </div>
-            <div class="skill-item">
-                <i class="fab fa-css3-alt"></i>
-                <p>CSS3</p>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-js"></i>
-                <p>JavaScript</p>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-react"></i>
-                <p>React</p>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-figma"></i>
-                <p>Figma</p>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-git-alt"></i>
-                <p>Git</p>
+
+            <!-- SKILLS -->
+            <div class="skills">
+                <div class="skill-item"><i class="fab fa-html5"></i><p>HTML5</p></div>
+                <div class="skill-item"><i class="fab fa-css3-alt"></i><p>CSS3</p></div>
+                <div class="skill-item"><i class="fab fa-js"></i><p>JavaScript</p></div>
+                <div class="skill-item"><i class="fab fa-react"></i><p>React</p></div>
+                <div class="skill-item"><i class="fab fa-figma"></i><p>Figma</p></div>
+                <div class="skill-item"><i class="fab fa-git-alt"></i><p>Git</p></div>
             </div>
         </div>
-    </div>
-</section>
 
-<section id="projects" class="projects">
+        <!-- WHAT I DO -->
+        <div class="about-highlights">
+            <div class="highlight-item reveal">
+                <i class="fas fa-laptop-code"></i>
+                <h4>Front-End Development</h4>
+                <p>Responsive, accessible and modern web interfaces.</p>
+            </div>
+            <div class="highlight-item reveal">
+                <i class="fas fa-palette"></i>
+                <h4>UI Implementation</h4>
+                <p>Pixel-perfect implementation from Figma designs.</p>
+            </div>
+            <div class="highlight-item reveal">
+                <i class="fas fa-rocket"></i>
+                <h4>Performance & UX</h4>
+                <p>Optimized performance and smooth interactions.</p>
+            </div>
+        </div>
+    </section>
+<!-- PROJECTS -->
+<section id="projects" class="projects reveal">
     <h2 class="section-title">My Projects</h2>
+
     <div class="projects-grid">
 
-        <!-- AI Studio Landing Page -->
-        <div class="project-card">
+        <!-- PROJECT 1 -->
+        <div class="project-card reveal">
             <div class="project-image">
-                <img src="images/aiStudio3.jpg" alt="AI Studio Landing Page">
+                <img src="images/aiStudio3.jpg" alt="AI Studio Landing Page" loading="lazy">
             </div>
             <div class="project-info">
                 <h3>AI Studio Landing Page</h3>
-                <p>Modern and responsive landing page for an AI platform. Features sleek animations and clear call-to-actions to engage users.</p>
+                <p>Modern and responsive landing page for an AI platform.</p>
+
+                <ul class="project-details">
+                    <li>Fully responsive layout</li>
+                    <li>Smooth UI animations</li>
+                    <li>Clean semantic HTML</li>
+                </ul>
+
                 <div class="tech-stack">
                     <span class="tech-tag">HTML</span>
                     <span class="tech-tag">CSS</span>
                     <span class="tech-tag">JavaScript</span>
                 </div>
-                <a href="#" class="project-link">Live Demo <i class="fas fa-arrow-right"></i></a>
-                
+
+                <div class="project-links">
+                    <a href="https://ai-studio-landing-page-brown.vercel.app/" target="_blank">
+                        Live Demo
+                    </a>
+                    <a href="https://github.com/pyildiz23/ai-studio-landingPage.git" target="_blank">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
             </div>
         </div>
 
-        <!-- Podcast Hub Website -->
-        <div class="project-card">
+        <!-- PROJECT 2 -->
+        <div class="project-card reveal">
             <div class="project-image">
-                <img src="images/podcast1.jpg" alt="Podcast Hub Website">
+                <img src="images/podcast1.jpg" alt="Podcast Hub Website" loading="lazy">
             </div>
             <div class="project-info">
                 <h3>Podcast Hub Website</h3>
-                <p>A responsive podcast website with audio streaming, search functionality, and dynamic episode listings. Clean and minimal design.</p>
+                <p>Responsive podcast platform with audio streaming.</p>
+
+                <ul class="project-details">
+                    <li>Dynamic episode listing</li>
+                    <li>Search functionality</li>
+                    <li>Mobile-first design</li>
+                </ul>
+
                 <div class="tech-stack">
                     <span class="tech-tag">HTML</span>
                     <span class="tech-tag">CSS</span>
                     <span class="tech-tag">JavaScript</span>
                 </div>
-                <a href="#" class="project-link">Live Demo <i class="fas fa-arrow-right"></i></a>
-               
+
+                <div class="project-links">
+                    <a href="https://podcast-site-mu.vercel.app/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/pyildiz23/PodcastSite.git" target="_blank">
+                        
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
             </div>
         </div>
 
-        <!-- Restaurant Reservation App -->
-        <div class="project-card">
+        <!-- PROJECT 3 -->
+        <div class="project-card reveal">
             <div class="project-image">
-                <img src="images/bistroResto.jpg" alt="Restaurant Reservation App">
+                <img src="images/bistroResto.jpg" alt="Restaurant Reservation App" loading="lazy">
             </div>
             <div class="project-info">
-                <h3>Restaurant Reservation</h3>
-                <p>A React-based web application for booking tables at restaurants. Includes calendar integration, responsive UI, and state management for seamless user experience.</p>
+                <h3>Restaurant Reservation App</h3>
+                <p>React-based table reservation system.</p>
+
+                <ul class="project-details">
+                    <li>React hooks & state management</li>
+                    <li>Responsive UI</li>
+                    <li>Component-based architecture</li>
+                </ul>
+
                 <div class="tech-stack">
                     <span class="tech-tag">React</span>
                     <span class="tech-tag">CSS</span>
                     <span class="tech-tag">JavaScript</span>
                 </div>
-                <a href="#" class="project-link">Live Demo <i class="fas fa-arrow-right"></i></a>
-               
+
+                <div class="project-links">
+                    <a href="https://bistro-moderne-git-main-pyildizs-projects.vercel.app/" target="_blank">
+                        Live Demo
+                    </a>
+                    <a href="https://github.com/pyildiz23/bistro-moderne.git" target="_blank">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -131,39 +217,51 @@
 </section>
 
 
-
+    <!-- CONTACT -->
     <section id="contact">
-    <h2 class="section-title">Get In Touch</h2>
-    <div class="contact-content">
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your full name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Your email address" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" placeholder="Write your message here..." required></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-        <div class="contact-info">
-            <p style="margin: 1.5rem 0;">Or reach me directly at: <a href="mailto:pinardemiray25@gmail.com">pinardemiray25@gmail.com</a></p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+        <h2 class="section-title">Get In Touch</h2>
+
+        <p class="contact-intro">
+            I'm open to junior front-end roles, freelance projects, or collaborations.
+            Feel free to reach out!
+        </p>
+
+        <div class="contact-content">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Your email address" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder="Write your message..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <p>
+                    Or reach me directly at:
+                    <a href="mailto:pinardemiray25@gmail.com">
+                        pinardemiray25@gmail.com
+                    </a>
+                </p>
+                <div class="social-icons">
+                    <a href="https://github.com/pyildiz23" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/pinar-demiray/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 PINAR DEMİRAY. All rights reserved.</p>
-        <p>Designed & Built by Pinar Demiray</p>
+        <p>&copy; 2025 Pinar Demiray. All rights reserved.</p>
+        <p>Front-End Developer · React · UI Focused</p>
     </footer>
 
     <script src="script.js"></script>
