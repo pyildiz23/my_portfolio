@@ -584,7 +584,7 @@ footer {
     }
 }
 
-/* Mobile - 480px and below */
+/* Mobile - 480px and below added */
 @media (max-width: 480px) {
     /* Header */
     header {
